@@ -3,7 +3,7 @@
 
 ## Overview
 
-Built a robust hospital database system using SQL, featuring efficient relational mapping and CRUD operations. Developed database relations, populated datasets, and optimized functionality with queries, views, and triggers.
+Built a robust hospital database system using SQL, featuring efficient relational mapping and CRUD operations. Developed database relations, populated datasets, and optimized functionality with queries, views, and triggers. The process of creating the database involved relational mapping and the creation of an ER diagram.
 
 ## 📚 Table of Contents
 
@@ -16,11 +16,22 @@ Built a robust hospital database system using SQL, featuring efficient relationa
 
 ## ⭐ Features
 
-- Efficient relational mapping
-- Comprehensive CRUD operations
-- Optimized queries for improved performance
-- Use of views for better data representation
-- Implementation of triggers for automated processes
+### VIEWS AND DESCRIPTIONS
+- **Unpaid invoices:** Helps in finding out which patients have not paid their invoices.
+- **Available rooms:** Lists all the rooms with at least 1 available bed at the moment.
+- **Pending orders:** Provides concise information on the orders that have not been fully completed.
+
+### TRIGGERS AND DESCRIPTIONS
+- **Create payable for each room booking:** Makes it convenient for calculating the cost of rooms.
+- **Monitor expensive procedures:** Ensures that physicians who order procedures costing more than $1000 monitor the patient for at least 2 hours, per hospital policy.
+- **Unassign monitoring physician upon paid invoice:** Automatically frees up all physicians monitoring a patient once the patient has paid their invoice.
+
+### QUERIES, RESULTS AND DESCRIPTIONS
+- **People covered by insurance:** Finds the names and invoice amounts of patients billed at least $300 but didn't book rooms on the VIP 4th floor.
+- **Most common administered medicine:** Identifies the most common medications given to improve logistics efficiency.
+- **Unused rooms in April 2023:** Lists out the room numbers that were not used by any patient in April 2023.
+
+(AND many more features listed in the pdf...)
 
 ## ⚙️ Installation
 
